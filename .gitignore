@@ -1,0 +1,17 @@
+icon
+doc
+dev
+DS_Store
+*.sh
+*.idea*
+*.zip
+*.rar
+*.via
+*.tmp
+*.err
+*.psd
+*.tags
+*.project
+*.ini
+*.DS_Store
+

@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  nav.nav
+    span.logo
+      i(class='fa fa-tachometer fa-2x')
+      F2E
+    ul
+      li
+        a(href='/push')
+          i(class='fa fa-cloud-upload') &nbsp;推送
+  each val in [1, 2, 3, 4, 5]
+    p= val

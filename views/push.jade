@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  nav.nav
+    span.logo
+      i(class='fa fa-tachometer fa-2x')
+      F2E
+    ul
+      li
+        a(href='/push')
+          i(class='fa fa-cloud-upload') &nbsp;推送
+  div.login-panel
+    h4
+      i(class='fa fa-cog fa-spin')
+      &nbsp; 推送
+    form(class='pure-form pure-form-stacked' method='post' action='http://10.10.99.101:7160/deploy/tao.b5mcdn.com/stagepatch2pre')
+      div(class='push-box pure-form-aligned')
+        label(for='cdn')
+        input(type='text' value='static' name='patch')
+        button(class='pure-button pure-button-primary' type='submit') 推送
